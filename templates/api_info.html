@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>API Data</title>
+</head>
+<body>
+	<h5>Joke search: {{type}}</h5>
+	{% safe %}
+	<p>{{value.joke}}</p>
+	{% endsafe %}
+	<small>Categories: {{",".join(value.categories)}}
+</body>
+</html>

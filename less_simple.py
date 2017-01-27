@@ -1,5 +1,5 @@
 from flask import Flask
-app = Flask("My Application")
+app = Flask("My Less Simple Application")
 
 @app.route("/user/<username>")
 def hello(username):
