@@ -5,9 +5,7 @@
 </head>
 <body>
 	<h5>Joke search: {{type}}</h5>
-	{% safe %}
-	<p>{{value.joke}}</p>
-	{% endsafe %}
+	<p>{{value.joke | safe}}</p>
 	<small>Categories: {{",".join(value.categories)}}
 </body>
 </html>
